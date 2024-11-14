@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: SB-Profiles
+  profiles:
+    active: test
+---
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+      
+profile:
+  id: 1
+  name: Dev Profile
+---
+spring:
+ config:
+   activate:
+     on-profile: "test"
+profile:
+  id: 2
+  name: Test Profile
+---
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+profile:
+  id: 3
+  name: Prod Profile
+
+    
